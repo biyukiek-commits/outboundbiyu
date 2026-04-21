@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Penyedia jasa Outbound Training & Team Building terbaik di Malang.">
+    <title>AlamMalang // Outbound System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <style>
+        /* DESIGN TOKENS - VAPORWAVE DNA */
+        :root {
+            --void-bg: #090014;
+            --magenta: #FF00FF;
+            --cyan: #00FFFF;
+            --orange: #FF9900;
+            --glass-purple: rgba(26, 16, 60, 0.8);
+            --border-muted: #2D1B4E;
+            --chrome-text: #E0E0E0;
+            --sunset-gradient: linear-gradient(to right, #FF9900, #FF00FF, #00FFFF);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--void-bg);
+            color: var(--chrome-text);
+            font-family: 'Share Tech Mono', monospace;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* CRT SCANLINES OVERLAY */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(18, 16, 20, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+            background-size: 100% 4px;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: var(--cyan);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* THE INFINITE GRID BACKGROUND */
+        .grid-floor {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(transparent 95%, var(--magenta) 95%),
+                linear-gradient(90deg, transparent 95%, var(--magenta) 95%);
+            background-size: 40px 40px;
+            transform: perspective(500px) rotateX(60deg) translateY(-100px) scale(3);
+            mask-image: linear-gradient(to top, black, transparent);
+            opacity: 0.15;
+            z-index: -1;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(9, 0, 20, 0.9);
+            border-bottom: 2px solid var(--cyan);
+            box-shadow: 0 0 15px var(--cyan);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--magenta);
+            text-decoration: none;
+            text-shadow: 0 0 5px var(--magenta);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--chrome-text);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--cyan);
+            text-shadow: 0 0 8px var(--cyan);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 5rem);
+            background: var(--sunset-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(255, 0, 255, 0.4));
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            color: var(--cyan);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* BUTTONS: SKEWED & NEON */
+        .btn-vapor {
+            position: relative;
+            display: inline-block;
+            padding: 15px 40px;
+            background: transparent;
+            border: 2px solid var(--cyan);
+            color: var(--cyan);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transform: skewX(-12deg);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-vapor span {
+            display: inline-block;
+            transform: skewX(12deg);
+        }
+
+        .btn-vapor:hover {
+            transform: skewX(0deg);
+            background: var(--cyan);
+            color: #000;
+            box-shadow: 0 0 30px var(--cyan);
+        }
+
+        /* SECTION PADDING */
+        section {
+            padding: 100px 5%;
+            position: relative;
+        }
+
+        /* TENTANG KAMI: TERMINAL STYLE */
+        .about-card {
+            background: var(--glass-purple);
+            border: 2px solid var(--border-muted);
+            border-top: 4px solid var(--cyan);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            backdrop-blur: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 450px;
+            border: 2px solid var(--magenta);
+            filter: sepia(100%) hue-rotate(280deg) saturate(200%);
+            box-shadow: 15px 15px 0 var(--magenta);
+        }
+
+        /* CARDS: NEON PANELS */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--glass-purple);
+            border: 1px solid rgba(255, 0, 255, 0.3);
+            border-top: 2px solid var(--cyan);
+            padding: 30px;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--cyan);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        /* PERBAIKAN: Agar teks yang panjang tidak meluber (overflow) dari card */
+        .card h3 {
+            color: var(--cyan);
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .price-tag {
+            color: var(--orange);
+            font-weight: bold;
+            margin-top: 15px;
+            border-top: 1px dashed var(--border-muted);
+            padding-top: 10px;
+        }
+
+        /* GALERI: RGB DISTORTION */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            height: 250px;
+            overflow: hidden;
+            border: 1px solid var(--border-muted);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%) contrast(120%);
+            transition: 0.5s;
+        }
+
+        .gallery-item:hover img {
+            filter: grayscale(0%) contrast(100%);
+            transform: scale(1.1);
+        }
+
+        /* FAQ: ACCORDION TERMINAL */
+        .faq-item {
+            background: #000;
+            border: 1px solid var(--magenta);
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            color: var(--magenta);
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 0, 255, 0.1);
+        }
+
+        .faq-question::before {
+            content: "> ";
+            margin-right: 10px;
+        }
+
+        .faq-answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            color: var(--chrome-text);
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            padding-bottom: 15px;
+            padding-top: 10px;
+            max-height: 300px;
+            border-top: 1px dashed var(--border-muted);
+        }
+
+        /* DEDICATED CTA SECTION */
+        .cta-section {
+            background: linear-gradient(0deg, rgba(26, 16, 60, 0.9) 0%, rgba(9, 0, 20, 0.9) 100%);
+            border-top: 2px dashed var(--cyan);
+            border-bottom: 2px dashed var(--magenta);
+            text-align: center;
+            padding: 80px 5%;
+        }
+
+        /* FOOTER 3 COLUMNS */
+        footer {
+            background: #000;
+            border-top: 2px solid var(--magenta);
+            padding: 60px 5% 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--cyan);
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .footer-col p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            text-decoration: none;
+            color: var(--chrome-text);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .footer-col ul li a::before {
+            content: "> ";
+            color: var(--magenta);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--cyan);
+            text-shadow: 0 0 8px var(--cyan);
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-muted);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* WHATSAPP FLOAT */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+            z-index: 1001;
+            transition: 0.3s;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+        }
+
+        .wa-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        /* BACK TO TOP BUTTON */
+        .back-to-top {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            background: transparent;
+            border: 2px solid var(--cyan);
+            color: var(--cyan);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-family: 'Orbitron', sans-serif;
+            cursor: pointer;
+            z-index: 1001;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+            text-decoration: none;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--cyan);
+            color: #000;
+            box-shadow: 0 0 20px var(--cyan);
+            transform: translateY(-5px);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .about-card {
+                flex-direction: column;
+            }
+
+            .wa-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .wa-float svg {
+                width: 28px;
+                height: 28px;
+            }
+
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 90px;
+                right: 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-floor"></div>
+
+    <header>
+        <a href="#" class="logo">ALAM_MALANG.exe</a>
+        <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="paket.html">Paket Outbound</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </header>
+
+    <section class="hero" id="beranda">
+        <h1>OUTBOUND PROTOCOL.</h1>
+        <p>> MEMULAI_PROSES: Membangun karakter, kepemimpinan, dan sinergi tim di alam terbuka dengan metode
+            Experiential Learning terbaik di Malang.</p>
+        <a href="https://wa.me/6281234567890" target="_blank" class="btn-vapor"><span>BOOK_SCHEDULE_NOW</span></a>
+    </section>
+
+    <section id="tentang">
+        <div class="about-card">
+            <div class="about-image">
+                <img src="img/corporate-gathering.webp"
+                    alt="Kegiatan Outbound">
+            </div>
+            <div class="about-text">
+                <h2>System Overview</h2>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    <strong>ALAMMALANG</strong> adalah provider <em>Outbound Training & Team Building</em> yang berfokus
+                    pada pengembangan Sumber Daya Manusia (SDM). Kami meretas batas kemampuan tim Anda di alam terbuka,
+                    menggabungkan petualangan fisik, penyelesaian masalah, dan presisi strategis.
+                </p>
+                <p style="line-height: 1.8; color: var(--cyan);">
+                    Lokasi Basis: MALANG_CORE_CITY<br>
+                    Fokus Area: Team Work, Leadership, Fun Games<br>
+                    Status Keamanan: LEVEL_MAX (Standard Operational Procedure Terjamin)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="paket">
+        <h2>Paket Outbound</h2>
+        <div class="services-grid">
+            <div class="card">
+                <div>
+                    <h3>[01] CORPORATE_TEAM_BUILDING</h3>
+                    <p>Program outbound 1 hari penuh (One Day Tour). Sinkronisasi antar karyawan untuk mencapai
+                        efisiensi komunikasi, trust, dan problem solving.</p>
+                </div>
+                <div class="price-tag">> Mulai Rp 150.000 / PAX</div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>[02] ADVENTURE_RAFTING</h3>
+                    <p>Navigasi arus sungai deras dengan algoritma kerjasama yang presisi. Sudah termasuk perlengkapan
+                        safety, guide, dan makan siang.</p>
+                </div>
+                <div class="price-tag">> Mulai Rp 225.000 / PAX</div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>[03] TACTICAL_PAINTBALL</h3>
+                    <p>Simulasi strategi tempur dalam lingkungan sandbox alam terbuka. Melatih fokus, strategi, dan
+                        keberanian mengambil keputusan.</p>
+                </div>
+                <div class="price-tag">> Mulai Rp 175.000 / PAX</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri">
+        <h2>Visual Archive</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img
+                    src="img/IMG_9847.webp"
+                    alt="Outbound Activity"></div>
+            <div class="gallery-item"><img
+                    src="img/IMG_9847.webp"
+                    alt="Rafting Activity"></div>
+            <div class="gallery-item"><img
+                    src="img/lapangan-outbound.webp"
+                    alt="Team Building"></div>
+            <div class="gallery-item"><img
+                    src="img/wisata-paralayang2.webp"
+                    alt="Fun Games"></div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>System FAQ</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-question">QUERY 01: Fasilitas apa saja yang didapat dalam paket?</div>
+                <div class="faq-answer">AFIRMATIF. Setiap paket standar sudah terenkripsi dengan fasilitas: Trainer
+                    bersertifikat, peralatan games, makan siang, welcome drink/snack, P3K, dan dokumentasi foto.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">QUERY 02: Berapa minimal peserta untuk pemesanan?</div>
+                <div class="faq-answer">Minimal 30 peserta (user) untuk eksekusi protokol standar Team Building
+                    perusahaan. Jika kurang dari itu, silakan hubungi admin untuk penyesuaian harga.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">QUERY 03: Apakah lokasi outbound bisa ditentukan oleh klien?</div>
+                <div class="faq-answer">Tentu. Kami memiliki beberapa lokasi rekomendasi di Batu dan Malang. Namun, jika
+                    Anda memiliki lokasi sendiri (misal: di area hotel/villa yang sudah disewa), tim kami siap melakukan
+                    deployment ke lokasi Anda.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">QUERY 04: Bagaimana cara melakukan reservasi jadwal?</div>
+                <div class="faq-answer">Silakan klik tombol WhatsApp di pojok kanan bawah atau tombol CTA di website ini
+                    untuk terhubung langsung dengan Customer Service kami. Lakukan DP (Down Payment) untuk mengunci
+                    jadwal server.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 style="font-size: 2.5rem; color: #fff; text-shadow: 0 0 15px var(--magenta); margin-bottom: 20px;">
+            SYSTEM_READY?</h2>
+        <p
+            style="font-size: 1.2rem; margin-bottom: 40px; color: var(--cyan); max-width: 600px; margin-left: auto; margin-right: auto;">
+            Kapasitas jadwal terbatas. Segera hubungi operator kami untuk inisiasi program outbound, rafting, atau
+            paintball tim Anda sekarang juga.
+        </p>
+        <a href="https://wa.me/6281234567890" target="_blank" class="btn-vapor"
+            style="background: var(--magenta); border-color: var(--magenta); color: #fff; box-shadow: 0 0 20px var(--magenta);">
+            <span>HUBUNGI WHATSAPP</span>
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo"
+                    style="font-size: 20px; display:block; margin-bottom: 15px;">ALAM_MALANG.exe</a>
+                <p>Provider Outbound Training, Rafting, dan Paintball di area Malang dan Batu. Membangun sinergi tim di
+                    dunia nyata dengan sentuhan masa depan digital.</p>
+                <p style="color: var(--magenta); font-weight: bold; margin-top: 15px;">EST 2088</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>SYSTEM_LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentangkami.html">Tentang Kami</a></li>
+                    <li><a href="paket.html">Paket Outbound</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT_NODE</h4>
+                <p>📍 MALANG_CORE_CITY, SECTOR 7</p>
+                <p>📞 +62 812-3456-7890</p>
+                <p>✉️ sysadmin@alammalang.net</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 DIGITAL_ADVENTURE_SYSTEM. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6281234567890" class="wa-float" target="_blank" title="Chat di WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.12.548 4.183 1.589 6.002L.1 24l6.126-1.608C8.01 23.36 10.005 23.94 12.031 23.94c6.646 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm.006 21.921c-1.782 0-3.528-.479-5.06-1.385l-.363-.214-3.766.988.998-3.666-.235-.374A9.907 9.907 0 0 1 2.112 12.03C2.112 6.551 6.574 2.088 12.037 2.088c5.463 0 9.925 4.463 9.925 9.942s-4.462 9.891-9.925 9.891zM17.47 14.5c-.298-.149-1.761-.871-2.034-.971-.273-.1-.472-.149-.67.149-.199.298-.769.971-.944 1.169-.174.199-.348.224-.646.075-.298-.149-1.258-.464-2.397-1.485-.886-.793-1.485-1.774-1.659-2.072-.174-.298-.019-.46.13-.609.135-.135.298-.348.447-.522.149-.174.199-.298.298-.497.1-.199.05-.373-.025-.522-.075-.149-.67-1.616-.918-2.213-.241-.58-.485-.502-.67-.51-.174-.008-.373-.008-.572-.008s-.522.075-.795.373c-.273.298-1.043 1.019-1.043 2.486 0 1.467 1.068 2.885 1.217 3.084.149.199 2.1 3.208 5.088 4.498.712.308 1.267.492 1.701.63.714.227 1.365.195 1.88.118.574-.086 1.761-.719 2.009-1.413.248-.694.248-1.289.174-1.413-.074-.124-.273-.199-.572-.348z" />
+        </svg>
+    </a>
+
+    <a href="#" class="back-to-top" id="backToTop" title="Scroll ke Atas">▲</a>
+
+    <script>
+        // Logic Accordion untuk FAQ
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                // Tutup FAQ lain jika ingin hanya 1 yang terbuka (opsional)
+                // document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+                // Toggle active class di FAQ yang di-klik
+                q.parentElement.classList.toggle('active');
+            });
+        });
+
+        // Script untuk Back to Top Button
+        const backToTopBtn = document.getElementById("backToTop");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        };
+
+        backToTopBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
