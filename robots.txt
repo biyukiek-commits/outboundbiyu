@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://outboundbiyu.vercel.app/sitemap.xml
