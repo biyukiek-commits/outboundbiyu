@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - OUTBOUND™</title>
-    <meta name="description" content="Profil OUTBOUND™, penyedia layanan team building dan adventure profesional dengan instruktur tersertifikasi sejak 2008.">
-    <meta name="keywords" content="tentang outbound, profil provider outbound, instruktur outbound, pengalaman outbound">
-    <meta property="og:title" content="Tentang Kami - OUTBOUND™">
-    <meta property="og:description" content="Profil penyedia layanan team building profesional sejak 2008.">
-    <meta property="og:image" content="https://placehold.co/1200x630/4a6741/ffffff?text=Tentang+Kami">
+    <title>Testimoni - OUTBOUND™</title>
+    <meta name="description" content="Lihat apa kata klien kami tentang pengalaman outbound dan team building bersama OUTBOUND™.">
+    <meta name="keywords" content="testimoni outbound, review outbound, klien outbound, pengalaman team building">
+    <meta property="og:title" content="Testimoni - OUTBOUND™">
+    <meta property="og:description" content="Lihat apa kata klien kami tentang pengalaman outbound bersama kami.">
+    <meta property="og:image" content="https://placehold.co/1200x630/4a6741/ffffff?text=Testimoni+Klien">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://outboundjaya.vercel.app/tentangkami.html">
+    <meta property="og:url" content="https://outboundjaya.vercel.app/testimoni.html">
     <link rel="icon" type="image/x-icon" href="https://placehold.co/32x32/4a6741/ffffff?text=O">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +94,14 @@
             opacity: 1;
             pointer-events: auto;
         }
+
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 
@@ -105,8 +113,8 @@
             <a href="index.html" class="hover:text-brand-green">Beranda</a>
             <a href="paket.html" class="hover:text-brand-green">Paket</a>
             <a href="lokasi.html" class="hover:text-brand-green">Lokasi</a>
-            <a href="testimoni.html" class="hover:text-brand-green">Testimoni</a>
-            <a href="tentangkami.html" class="text-brand-green font-bold">Tentang Kami</a>
+            <a href="testimoni.html" class="text-brand-green font-bold">Testimoni</a>
+            <a href="tentangkami.html" class="hover:text-brand-green">Tentang Kami</a>
             <a href="blog.html" class="hover:text-brand-green">blog</a>
         </div>
         <div class="flex space-x-4 text-gray-600">
@@ -118,69 +126,78 @@
 
     <header class="bg-blob-sub pt-12 pb-20">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-sm font-semibold tracking-wider text-brand-green mb-3 uppercase">Mengenal Lebih Dekat</p>
-            <h1 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">Dedikasi Kami Untuk Tim Anda</h1>
+            <p class="text-sm font-semibold tracking-wider text-brand-green mb-3 uppercase">Apa Kata Mereka</p>
+            <h1 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">Cerita Sukses Bersama Kami</h1>
             <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Kami adalah partner strategis dalam pengembangan sumber daya manusia melalui metode pembelajaran luar ruangan yang inovatif dan menyenangkan.
+                Kepuasan klien adalah prioritas utama kami. Berikut adalah pengalaman tulus dari perusahaan yang telah mempercayakan kegiatan timnya kepada kami.
             </p>
         </div>
     </header>
 
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="w-full lg:w-1/2">
-                    <img src="img/IMG_5536.webp" alt="Our Team" class="rounded-3xl shadow-2xl">
-                </div>
-                <div class="w-full lg:w-1/2">
-                    <h2 class="text-3xl font-bold text-brand-dark mb-6">Sejarah & Visi Kami</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Berdiri sejak tahun 2008, OUTBOUND™ bermula dari semangat untuk menghadirkan aktivitas luar ruangan yang tidak hanya sekadar rekreasi, namun juga memberikan dampak positif bagi karakter dan kerja sama tim.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 bg-brand-light rounded-full flex items-center justify-center text-brand-green">
-                                <i class="fa-solid fa-eye"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-brand-dark">Visi</h4>
-                                <p class="text-sm text-gray-500">Menjadi provider outbound terkemuka di Indonesia yang diakui atas inovasi program dan keunggulan operasional.</p>
-                            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="testimonial-card p-8 bg-brand-light rounded-3xl border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-yellow-500 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 bg-brand-light rounded-full flex items-center justify-center text-brand-green">
-                                <i class="fa-solid fa-bullseye"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-brand-dark">Misi</h4>
-                                <p class="text-sm text-gray-500">Menciptakan lingkungan belajar yang aman dan inspiratif untuk membantu organisasi mencapai potensi maksimalnya.</p>
-                            </div>
+                        <p class="text-brand-dark italic mb-6 leading-relaxed">"Sangat profesional! Instrukturnya sangat sabar dan games yang diberikan benar-benar bisa mencairkan suasana kantor kami yang awalnya kaku."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="img/instruktur-paintball.webp" alt="User" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-brand-dark text-sm">Andini Dian</h4>
+                            <p class="text-xs text-gray-500 uppercase font-semibold">HR Manager, PT. Teknologi Maju</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="py-20 bg-brand-light">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">Nilai-Nilai Utama Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-8 bg-white rounded-3xl shadow-sm">
-                    <div class="text-4xl text-brand-green mb-4"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4 class="font-bold mb-2">Safety First</h4>
-                    <p class="text-xs text-gray-500">Keselamatan peserta adalah prioritas tanpa kompromi dalam setiap aktivitas.</p>
+                <div class="testimonial-card p-8 bg-brand-dark rounded-3xl text-white flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-yellow-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="italic mb-6 leading-relaxed opacity-90">"Lokasi yang direkomendasikan sangat luar biasa. Program Leadership-nya benar-benar memberikan perspektif baru bagi para manajer kami."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="img/IMG_5536.webp" alt="User" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-sm">Roni Saputra</h4>
+                            <p class="text-[10px] opacity-70 uppercase font-semibold">Direktur Operasional, Bank Sejahtera</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-8 bg-white rounded-3xl shadow-sm">
-                    <div class="text-4xl text-brand-green mb-4"><i class="fa-solid fa-lightbulb"></i></div>
-                    <h4 class="font-bold mb-2">Innovation</h4>
-                    <p class="text-xs text-gray-500">Terus mengembangkan metode permainan yang relevan dengan dinamika kerja modern.</p>
+
+                <div class="testimonial-card p-8 bg-brand-light rounded-3xl border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-yellow-500 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="text-brand-dark italic mb-6 leading-relaxed">"Fasilitas lengkap dan makanan enak! Anak-anak sangat menikmati rafting dan paintball. Pengalaman outing terbaik tahun ini."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="img/paintball.webp" alt="User" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-brand-dark text-sm">Maya Lestari</h4>
+                            <p class="text-xs text-gray-500 uppercase font-semibold">GA Lead, Creative Studio</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-8 bg-white rounded-3xl shadow-sm">
-                    <div class="text-4xl text-brand-green mb-4"><i class="fa-solid fa-heart"></i></div>
-                    <h4 class="font-bold mb-2">Integrity</h4>
-                    <p class="text-xs text-gray-500">Memberikan layanan transparan dan jujur kepada setiap klien kami.</p>
-                </div>
+
             </div>
         </div>
     </section>
@@ -189,7 +206,8 @@
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10 pb-12 mb-8">
             <div>
                 <div class="text-xl font-bold mb-6">OUTBOUND<sup class="text-xs">TM</sup></div>
-                <p class="text-sm opacity-70 leading-relaxed">Menciptakan momen kebersamaan yang tak terlupakan melalui petualangan di alam bebas.</p>
+                <p class="text-sm opacity-70 leading-relaxed">Menciptakan momen kebersamaan yang tak terlupakan melalui
+                    petualangan di alam bebas.</p>
             </div>
             <div>
                 <h4 class="font-bold mb-6">Navigasi</h4>
@@ -204,8 +222,12 @@
             <div>
                 <h4 class="font-bold mb-6">Ikuti Kami</h4>
                 <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-brand-dark transition"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-brand-dark transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-brand-dark transition"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-brand-dark transition"><i
+                            class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
