@@ -1,234 +1,674 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - OUTBOUND™</title>
-    <meta name="description" content="Profil OUTBOUND™, penyedia layanan team building dan adventure profesional dengan instruktur tersertifikasi sejak 2008.">
-    <meta name="keywords" content="tentang outbound, profil provider outbound, instruktur outbound, pengalaman outbound">
-    <meta property="og:title" content="Tentang Kami - OUTBOUND™">
-    <meta property="og:description" content="Profil penyedia layanan team building profesional sejak 2008.">
-    <meta property="og:image" content="https://placehold.co/1200x630/4a6741/ffffff?text=Tentang+Kami">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Tentang AlamMalang - Penyedia jasa Outbound Training & Digital Adventure.">
+    <meta name="keywords" content="outbound malang, team building malang, tentang alam malang">
+    <meta name="author" content="AlamMalang">
+    <link rel="canonical" href="https://outboundbiyu.vercel.app/tentangkami.html">
+    <meta property="og:title" content="Tentang Kami // AlamMalang">
+    <meta property="og:description" content="Tentang AlamMalang - Penyedia jasa Outbound Training & Digital Adventure.">
+    <meta property="og:url" content="https://outboundbiyu.vercel.app/tentangkami.html">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://outboundjaya.vercel.app/tentangkami.html">
-    <link rel="icon" type="image/x-icon" href="https://placehold.co/32x32/4a6741/ffffff?text=O">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            green: '#4a6741',
-                            dark: '#2c3e2d',
-                            light: '#f0f4ef',
-                            beige: '#f2ece4',
-                            text: '#333333'
-                        }
-                    }
-                }
-            }
-        }
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AlamMalang",
+      "url": "https://outboundbiyu.vercel.app/",
+      "description": "Penyedia jasa Outbound Training & Team Building terbaik di Malang."
+    }
     </script>
+    <title>Tentang Kami // AlamMalang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
     <style>
+        /* DESIGN TOKENS - VAPORWAVE DNA */
+        :root {
+            --void-bg: #090014;
+            --magenta: #FF00FF;
+            --cyan: #00FFFF;
+            --orange: #FF9900;
+            --glass-purple: rgba(26, 16, 60, 0.8);
+            --border-muted: #2D1B4E;
+            --chrome-text: #E0E0E0;
+            --sunset-gradient: linear-gradient(to right, #FF9900, #FF00FF, #00FFFF);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* FIX RUANG KOSONG DI KANAN MOBILE */
         html,
         body {
+            max-width: 100%;
             overflow-x: hidden;
+        }
+
+        body {
+            background-color: var(--void-bg);
+            color: var(--chrome-text);
+            font-family: 'Share Tech Mono', monospace;
             scroll-behavior: smooth;
         }
 
-        body {
-            color: #333333;
-            background-color: #ffffff;
-            width: 100%;
-        }
-
-        .bg-blob-sub {
-            background: linear-gradient(135deg, #f0f4ef 0%, #ffffff 100%);
-            border-bottom-right-radius: 80px;
-        }
-
-        .float-btn {
+        /* CRT SCANLINES OVERLAY */
+        body::before {
+            content: "";
             position: fixed;
-            right: 20px;
-            z-index: 50;
-            border-radius: 50px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(18, 16, 20, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+            background-size: 100% 4px;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: var(--cyan);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* THE INFINITE GRID BACKGROUND */
+        .grid-floor {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(transparent 95%, var(--magenta) 95%),
+                linear-gradient(90deg, transparent 95%, var(--magenta) 95%);
+            background-size: 40px 40px;
+            transform: perspective(500px) rotateX(60deg) translateY(-100px) scale(3);
+            mask-image: linear-gradient(to top, black, transparent);
+            opacity: 0.15;
+            z-index: -1;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(9, 0, 20, 0.9);
+            border-bottom: 2px solid var(--cyan);
+            box-shadow: 0 0 15px var(--cyan);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--magenta);
+            text-decoration: none;
+            text-shadow: 0 0 5px var(--magenta);
+            white-space: nowrap;
+        }
+
+        /* Hamburger Menu Icon */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background-color: var(--cyan);
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--chrome-text);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--cyan);
+            text-shadow: 0 0 8px var(--cyan);
+        }
+
+        /* SECTION PADDING */
+        section {
+            padding: 80px 5%;
+            position: relative;
+        }
+
+        /* PAGE HEADER (TENTANG KAMI) */
+        .page-header {
+            margin-top: 100px;
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px dashed var(--magenta);
+        }
+
+        .page-header h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: var(--chrome-text);
+            text-shadow: 2px 2px 0px var(--magenta), -2px -2px 0px var(--cyan);
+            margin-bottom: 15px;
+            overflow-wrap: break-word;
+            /* Proteksi teks panjang */
+        }
+
+        .page-header p {
+            color: var(--cyan);
+            font-size: 1.2rem;
+            padding: 0 15px;
+        }
+
+        /* TERMINAL STYLE: VISI & MISI */
+        .vision-mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .terminal-box {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--border-muted);
+            border-top: 20px solid var(--border-muted);
+            padding: 30px;
+            position: relative;
+            box-shadow: 10px 10px 0px rgba(255, 0, 255, 0.1);
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .terminal-box:hover {
+            border-color: var(--magenta);
+            border-top-color: var(--magenta);
+            box-shadow: 10px 10px 0px rgba(255, 0, 255, 0.3);
+        }
+
+        .terminal-box h3 {
+            color: var(--orange);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 1px solid rgba(255, 153, 0, 0.3);
+            padding-bottom: 10px;
+            display: inline-block;
+            overflow-wrap: anywhere;
+            /* Proteksi teks panjang */
+        }
+
+        .terminal-box p,
+        .terminal-box ul {
+            color: var(--cyan);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .terminal-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .terminal-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .terminal-box ul li::before {
+            content: ">> ";
+            color: var(--magenta);
+            font-weight: bold;
+        }
+
+        /* CORE OPERATORS (TEAM SECTION) */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-card {
+            background: var(--glass-purple);
+            border: 1px solid var(--cyan);
+            text-align: center;
+            padding: 20px;
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+            border-color: var(--magenta);
+        }
+
+        .team-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--cyan);
+            margin-bottom: 20px;
+            filter: grayscale(100%) contrast(150%) sepia(50%) hue-rotate(200deg);
+            transition: 0.4s;
+        }
+
+        .team-card:hover img {
+            filter: none;
+            border-color: var(--magenta);
+        }
+
+        .team-card h4 {
+            color: var(--chrome-text);
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .team-card span {
+            color: var(--magenta);
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            border-top: 2px solid var(--magenta);
+            padding: 60px 5% 20px;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--cyan);
+            margin-bottom: 20px;
+        }
+
+        .footer-col p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            text-decoration: none;
+            color: var(--chrome-text);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .footer-col ul li a::before {
+            content: "> ";
+            color: var(--magenta);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--cyan);
+            text-shadow: 0 0 8px var(--cyan);
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-muted);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* WA FLOAT & BACK TO TOP */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+            z-index: 1001;
+            transition: 0.3s;
         }
 
-        #wa-btn {
-            bottom: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: #25D366;
-            font-size: 30px;
+        .wa-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
         }
 
-        #btt-btn {
-            bottom: 90px;
+        .wa-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            background: transparent;
+            border: 2px solid var(--cyan);
+            color: var(--cyan);
             width: 50px;
             height: 50px;
-            background-color: #4a6741;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 20px;
+            font-family: 'Orbitron', sans-serif;
+            cursor: pointer;
+            z-index: 1001;
             opacity: 0;
-            pointer-events: none;
+            visibility: hidden;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+            text-decoration: none;
         }
 
-        #btt-btn.show {
+        .back-to-top.show {
             opacity: 1;
-            pointer-events: auto;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--cyan);
+            color: #000;
+            box-shadow: 0 0 20px var(--cyan);
+            transform: translateY(-5px);
+        }
+
+        /* ========================================================
+           RESPONSIVE REVISED - FIX MOBILE NAVBAR & OVERFLOW 
+           ======================================================== */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.8rem;
+                overflow-wrap: anywhere;
+            }
+
+            .logo {
+                font-size: 1.25rem;
+                letter-spacing: 0;
+            }
+
+            header {
+                flex-direction: row;
+                padding: 15px 5%;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            /* Navigasi Dropdown Mobile */
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(9, 0, 20, 0.95);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                border-bottom: 2px solid var(--cyan);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 1.1rem;
+                padding: 12px;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .terminal-box {
+                padding: 20px;
+            }
+
+            .wa-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .wa-float svg {
+                width: 28px;
+                height: 28px;
+            }
+
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 90px;
+                right: 25px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 
-<body class="antialiased">
+<body>
 
-    <nav class="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
-        <div class="text-2xl font-bold tracking-tighter text-brand-dark">OUTBOUND<sup class="text-xs">TM</sup></div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="index.html" class="hover:text-brand-green">Beranda</a>
-            <a href="paket.html" class="hover:text-brand-green">Paket</a>
-            <a href="lokasi.html" class="hover:text-brand-green">Lokasi</a>
-            <a href="testimoni.html" class="hover:text-brand-green">Testimoni</a>
-            <a href="tentangkami.html" class="text-brand-green font-bold">Tentang Kami</a>
-            <a href="blog.html" class="hover:text-brand-green">blog</a>
-        </div>
-        <div class="flex space-x-4 text-gray-600">
-            <button><i class="fa-solid fa-calendar-check"></i></button>
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="md:hidden"><i class="fa-solid fa-bars"></i></button>
-        </div>
-    </nav>
+    <div class="grid-floor"></div>
 
-    <header class="bg-blob-sub pt-12 pb-20">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-sm font-semibold tracking-wider text-brand-green mb-3 uppercase">Mengenal Lebih Dekat</p>
-            <h1 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">Dedikasi Kami Untuk Tim Anda</h1>
-            <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Kami adalah partner strategis dalam pengembangan sumber daya manusia melalui metode pembelajaran luar ruangan yang inovatif dan menyenangkan.
-            </p>
+    <header>
+        <a href="index.html" class="logo">ALAM_MALANG.exe</a>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentangkami.html" class="active">Tentang Kami</a></li>
+            <li><a href="paket.html">Paket Outbound</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
     </header>
 
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="w-full lg:w-1/2">
-                    <img src="img/IMG_5536.webp" alt="Our Team" class="rounded-3xl shadow-2xl">
-                </div>
-                <div class="w-full lg:w-1/2">
-                    <h2 class="text-3xl font-bold text-brand-dark mb-6">Sejarah & Visi Kami</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Berdiri sejak tahun 2008, OUTBOUND™ bermula dari semangat untuk menghadirkan aktivitas luar ruangan yang tidak hanya sekadar rekreasi, namun juga memberikan dampak positif bagi karakter dan kerja sama tim.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 bg-brand-light rounded-full flex items-center justify-center text-brand-green">
-                                <i class="fa-solid fa-eye"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-brand-dark">Visi</h4>
-                                <p class="text-sm text-gray-500">Menjadi provider outbound terkemuka di Indonesia yang diakui atas inovasi program dan keunggulan operasional.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 w-10 h-10 bg-brand-light rounded-full flex items-center justify-center text-brand-green">
-                                <i class="fa-solid fa-bullseye"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-brand-dark">Misi</h4>
-                                <p class="text-sm text-gray-500">Menciptakan lingkungan belajar yang aman dan inspiratif untuk membantu organisasi mencapai potensi maksimalnya.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="page-header">
+        <h1>> WHO_ARE_WE?</h1>
+        <p>Membuka kunci potensi manusia melalui simulasi alam terbuka.</p>
     </section>
 
-    <section class="py-20 bg-brand-light">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">Nilai-Nilai Utama Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-8 bg-white rounded-3xl shadow-sm">
-                    <div class="text-4xl text-brand-green mb-4"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4 class="font-bold mb-2">Safety First</h4>
-                    <p class="text-xs text-gray-500">Keselamatan peserta adalah prioritas tanpa kompromi dalam setiap aktivitas.</p>
-                </div>
-                <div class="p-8 bg-white rounded-3xl shadow-sm">
-                    <div class="text-4xl text-brand-green mb-4"><i class="fa-solid fa-lightbulb"></i></div>
-                    <h4 class="font-bold mb-2">Innovation</h4>
-                    <p class="text-xs text-gray-500">Terus mengembangkan metode permainan yang relevan dengan dinamika kerja modern.</p>
-                </div>
-                <div class="p-8 bg-white rounded-3xl shadow-sm">
-                    <div class="text-4xl text-brand-green mb-4"><i class="fa-solid fa-heart"></i></div>
-                    <h4 class="font-bold mb-2">Integrity</h4>
-                    <p class="text-xs text-gray-500">Memberikan layanan transparan dan jujur kepada setiap klien kami.</p>
-                </div>
+    <section id="visi-misi">
+        <h2>System Protocol</h2>
+        <div class="vision-mission-grid">
+            <div class="terminal-box">
+                <h3>[ OBJECTIVE_VISION ]</h3>
+                <p>Menjadi interface utama dan provider terkemuka di Indonesia yang mengintegrasikan petualangan alam
+                    terbuka (Outbound) dengan pendekatan gamifikasi digital untuk menciptakan SDM yang adaptif, tangguh,
+                    dan futuristik.</p>
             </div>
-        </div>
-    </section>
 
-    <footer class="bg-brand-dark text-brand-light pt-16 pb-8">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10 pb-12 mb-8">
-            <div>
-                <div class="text-xl font-bold mb-6">OUTBOUND<sup class="text-xs">TM</sup></div>
-                <p class="text-sm opacity-70 leading-relaxed">Menciptakan momen kebersamaan yang tak terlupakan melalui petualangan di alam bebas.</p>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6">Navigasi</h4>
-                <ul class="space-y-3 text-sm opacity-70">
-                    <li><a href="index.html" class="hover:text-white">Beranda</a></li>
-                    <li><a href="paket.html" class="hover:text-white">Paket</a></li>
-                    <li><a href="lokasi.html" class="hover:text-white">Lokasi</a></li>
-                    <li><a href="testimoni.html" class="hover:text-white">Testimoni</a></li>
-                    <li><a href="tentangkami.html" class="hover:text-white">Tentang Kami</a></li>
+            <div class="terminal-box">
+                <h3>[ EXECUTION_MISSION ]</h3>
+                <ul>
+                    <li>Menyediakan simulasi <i>experiential learning</i> dengan standar keamanan maksimum.</li>
+                    <li>Melakukan sinkronisasi sinergi antar individu untuk mencapai <i>team-work</i> tingkat tinggi.
+                    </li>
+                    <li>Memberikan pelayanan logistik dan dokumentasi dengan resolusi terbaik.</li>
+                    <li>Membangun karakter kepemimpinan melalui tekanan simulasi (stress-test environment).</li>
                 </ul>
             </div>
-            <div>
-                <h4 class="font-bold mb-6">Ikuti Kami</h4>
-                <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-brand-dark transition"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-brand-dark transition"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+        </div>
+    </section>
+
+    <section id="tim-kami">
+        <h2>Core Operators</h2>
+        <p style="text-align: center; color: var(--magenta); margin-bottom: 40px;">> DAFTAR_USER_ADMINISTRATOR AKTIF</p>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&h=400&q=80"
+                    alt="Operator 1 - Alex Mercer" loading="lazy">
+                <h4>ALEX_MERCER</h4>
+                <span>[ System Admin / CEO ]</span>
+                <p style="font-size: 0.85rem; opacity: 0.7;">Arsitek utama di balik modul simulasi AlamMalang.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&h=400&q=80"
+                    alt="Operator 2 - Sarah Connor" loading="lazy">
+                <h4>SARAH_CONNOR</h4>
+                <span>[ Tactical Commander ]</span>
+                <p style="font-size: 0.85rem; opacity: 0.7;">Pakar navigasi lapangan dan eksekusi Paintball.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80"
+                    alt="Operator 3 - David Kusuma" loading="lazy">
+                <h4>DAVID_KUSUMA</h4>
+                <span>[ Flow Specialist ]</span>
+                <p style="font-size: 0.85rem; opacity: 0.7;">Mengendalikan algoritma arus Rafting dengan presisi.</p>
             </div>
         </div>
-        <div class="container mx-auto px-6 text-center text-xs opacity-50">
-            &copy; 2026 Outbound Adventure. All rights reserved.
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo"
+                    style="font-size: 20px; display:block; margin-bottom: 15px;">ALAM_MALANG.exe</a>
+                <p>Interface strategis untuk optimasi SDM. Membangun sinergi tim di dunia nyata dengan sentuhan masa
+                    depan digital.</p>
+                <p style="color: var(--magenta); font-weight: bold; margin-top: 15px;">EST 2088</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>SYSTEM_LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentangkami.html">Tentang Kami</a></li>
+                    <li><a href="paket.html">Paket</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTACT_NODE</h4>
+                <p>📍 MALANG_CORE_CITY, SECTOR 7</p>
+                <p>📞 +62 812-3456-7890</p>
+                <p>✉️ sysadmin@outboundbiyu.vercel.app</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 DIGITAL_ADVENTURE_SYSTEM. ALL RIGHTS RESERVED.
         </div>
     </footer>
 
-    <a href="#" id="btt-btn" class="float-btn"><i class="fa-solid fa-arrow-up"></i></a>
-    <a href="#" id="wa-btn" class="float-btn"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://wa.me/6281234567890" class="wa-float" target="_blank" title="Chat di WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.12.548 4.183 1.589 6.002L.1 24l6.126-1.608C8.01 23.36 10.005 23.94 12.031 23.94c6.646 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm.006 21.921c-1.782 0-3.528-.479-5.06-1.385l-.363-.214-3.766.988.998-3.666-.235-.374A9.907 9.907 0 0 1 2.112 12.03C2.112 6.551 6.574 2.088 12.037 2.088c5.463 0 9.925 4.463 9.925 9.942s-4.462 9.891-9.925 9.891zM17.47 14.5c-.298-.149-1.761-.871-2.034-.971-.273-.1-.472-.149-.67.149-.199.298-.769.971-.944 1.169-.174.199-.348.224-.646.075-.298-.149-1.258-.464-2.397-1.485-.886-.793-1.485-1.774-1.659-2.072-.174-.298-.019-.46.13-.609.135-.135.298-.348.447-.522.149-.174.199-.298.298-.497.1-.199.05-.373-.025-.522-.075-.149-.67-1.616-.918-2.213-.241-.58-.485-.502-.67-.51-.174-.008-.373-.008-.572-.008s-.522.075-.795.373c-.273.298-1.043 1.019-1.043 2.486 0 1.467 1.068 2.885 1.217 3.084.149.199 2.1 3.208 5.088 4.498.712.308 1.267.492 1.701.63.714.227 1.365.195 1.88.118.574-.086 1.761-.719 2.009-1.413.248-.694.248-1.289.174-1.413-.074-.124-.273-.199-.572-.348z" />
+        </svg>
+    </a>
+
+    <a href="#" class="back-to-top" id="backToTop" title="Scroll ke Atas">▲</a>
 
     <script>
-        const bttBtn = document.getElementById("btt-btn");
+        // Script Mobile Menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Script Back to Top
+        const backToTopBtn = document.getElementById("backToTop");
         window.onscroll = function () {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                bttBtn.classList.add("show");
+                backToTopBtn.classList.add("show");
             } else {
-                bttBtn.classList.remove("show");
+                backToTopBtn.classList.remove("show");
             }
         };
-        bttBtn.addEventListener("click", function (e) {
+        backToTopBtn.addEventListener('click', function (e) {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
